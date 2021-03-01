@@ -1,4 +1,4 @@
-FROM alpine:3.8
+FROM zxing/alpine
 
 WORKDIR /
 ENV FRP_VERSION 0.35.1
