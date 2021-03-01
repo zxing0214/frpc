@@ -11,8 +11,8 @@
 mkdir frpc;cd frpc
 wget https://raw.githubusercontent.com/zxing0214/frpc/master/frpc.ini 
 cd ..
-docker run zxing/frpc --restart=always --net=host --volume ./frpc:/frpc
-# 重启 frpc 容器即可生效
+# 修改frpc.ini 后，使用它启动容器
+docker run --restart=always --net=host --volume frpc:/frpc zxing/frpc
 ```
 
 ## 版本更新
